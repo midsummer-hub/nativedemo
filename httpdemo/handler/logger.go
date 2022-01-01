@@ -21,7 +21,7 @@ func AccessLogging(f http.HandlerFunc) http.HandlerFunc {
 			"IP":          r.RemoteAddr,
 			"Method":      r.Method,
 			"Path":        r.RequestURI,
-			"Params":       r.URL.Query(),
+			"Params":      r.URL.Query(),
 			"RequestBody": buf.String(),
 		})
 		rwr := &ResponseWithResponse{
