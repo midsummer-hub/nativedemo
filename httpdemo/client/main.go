@@ -21,7 +21,7 @@ func main() {
 		"Head[Cookie]:%s\n"+
 		"Head[user-agent]:%s\n"+
 		"StatusCode:%d\n",
-		response.Header["VERSION"],
+		response.Header["Version"],
 		response.Header["X-Token"],
 		response.Header["Cookie"],
 		response.Header["User-Agent"],

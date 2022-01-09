@@ -7,6 +7,7 @@ import (
 )
 
 func CallInfoHandler(w http.ResponseWriter, r *http.Request) {
+	os.Setenv("VERSION","0.0.1")
 	w.Header().Set("VERSION", os.Getenv("VERSION"))
 	w.Header().Set("X-Token", r.Header.Get("X-Token"))
 	w.Header().Set("X-Token", r.Header.Get("X-Token"))
